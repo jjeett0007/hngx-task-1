@@ -25,6 +25,9 @@ div#main div{
     padding: 10px;
     border-radius: 10px;
     background-color: dimgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media (max-width: 728px) {
