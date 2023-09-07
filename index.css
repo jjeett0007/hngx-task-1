@@ -1,0 +1,34 @@
+body {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body div#main {
+    width: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+div#main div{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: dimgrey;
+}
+
+@media (max-width: 728px) {
+    body div#main {
+        width: 100%;
+    }
+}
