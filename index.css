@@ -20,7 +20,7 @@ body div#main {
     margin: auto;
 }
 
-div#main div{
+div#main div {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -28,6 +28,10 @@ div#main div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+div#main div span {
+    width: auto;
 }
 
 @media (max-width: 728px) {
