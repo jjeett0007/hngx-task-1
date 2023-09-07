@@ -42,7 +42,7 @@ Submission Mode:Submit your task through the designated submission form. Ensure 
 
      Hosted the page on a platform of your choice (e.g., Vercel, GitHub Pages, Netlify).
      Double-check all requirements and acceptance criteria.
-     Provide your slack display name, HNG student ID, email and the hosted page's URL in the submission form.
+     Provide your Slack display name, HNG student ID, email and the hosted page's URL in the submission form.
     Before
      finalising your submission, thoroughly review your work to ensure
     accuracy, functionality and adherence to the specified guidelines.
