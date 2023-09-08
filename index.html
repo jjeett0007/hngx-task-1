@@ -1,40 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>HNGX task 1</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="main">
-        <div data-testid="slackUserName">
-            <span> Slack Display Name :</span>
-            <div></div>
+      <div data-testid="slackUserName">
+        <span> Slack Display Name :</span>
+        <div id="nameDisplay"></div>
+      </div>
+      <div data-testid="slackDisplayImage">
+        <span> Slack Display Picture:</span>
+        <div>
+            <img id="myImage" src="" alt="SlackImage" width="200px" />
         </div>
-        <div data-testid="slackDisplayImage">
-            <span> Slack Display Picture: :</span>
-            <div></div>
-        </div>
-        <div data-testid="currentDayOfTheWeek">
-            <span> Current Day of the Week:</span>
-            <div></div>
-        </div>
-        <div data-testid="currentUTCTime">
-            <span> Current UTC Time:</span>
-            <div></div>
-        </div>
-        <div data-testid="myTrack">
-            <span> Track:</span>
-            <div></div>
-        </div>
-        <div data-testid=“githubURL”>
-            <span>GitHub URL:</span>
-            <div></div>
-        </div>
+      </div>
+      <div data-testid="currentDayOfTheWeek">
+        <span> Current Day of the Week:</span>
+        <div id="dayOfWeek"></div>
+      </div>
+      <div data-testid="currentUTCTime">
+        <span> Current UTC Time:</span>
+        <div></div>
+      </div>
+      <div data-testid="myTrack">
+        <span> Track:</span>
+        <div id="mytrack"></div>
+      </div>
+      <div data-testid="“githubURL”">
+        <span>GitHub URL:</span>
+        <div></div>
+      </div>
     </div>
-</body>
+    <script>
+      function getCurrentDayOfWeek() {
+        const daysOfWeek = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        const currentDate = new Date();
+        const currentDayIndex = currentDate.getDay();
+        const currentDayOfWeek = daysOfWeek[currentDayIndex];
+        return currentDayOfWeek;
+      }
 
+      const dayOfWeekDiv = document.getElementById("dayOfWeek");
+      dayOfWeekDiv.textContent = getCurrentDayOfWeek();
+
+      function displayName() {
+        const nameDiv = document.getElementById("nameDisplay");
+        nameDiv.textContent = "Jet";
+      }
+
+      function setImageSource() {
+        const myImage = document.getElementById("myImage");
+        myImage.src = "https://ca.slack-edge.com/T05FFAA91JP-U05RD638XE0-e4e889dc4a55-512";
+      }
+
+      function setTrack() {
+        const trackDiv = document.getElementById("mytrack");
+        mytrack.textContent = "Track-Frontend"
+      }
+
+      displayName();
+      setImageSource();
+      setTrack();
+    </script>
+  </body>
 </html>
