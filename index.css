@@ -33,6 +33,10 @@ div#main div span {
     width: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 div#main div div {
     width: auto;
 }
